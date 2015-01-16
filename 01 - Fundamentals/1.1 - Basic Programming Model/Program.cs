@@ -11,6 +11,10 @@ namespace _1._1___Basic_Programming_Model
         static void Main(string[] args)
         {
             Console.WriteLine(GreatestCommonDivisor.GCD(10, 6));
+
+            Console.WriteLine(Basics.MaximumOfArrayValues(new int[] {1, 2, 3, 4}));
+
+            Console.WriteLine(Basics.AverageOfArrayValues(new double[] {10, 20, 30}));
         }
     }
 }

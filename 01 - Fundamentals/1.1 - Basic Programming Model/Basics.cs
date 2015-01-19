@@ -34,6 +34,20 @@ namespace _1._1___Basic_Programming_Model
 
             return average;
         }
+
+        
+        public static string[] CopyToAnotherArray(string[] oldArray)
+        {
+            string[] newArray = new string[oldArray.Length];
+
+            for (int i = 0; i < oldArray.Length; i++)
+			{
+                newArray[i] = oldArray[i];
+			}
+
+            return newArray;
+        }
                 
+        
     }
 }

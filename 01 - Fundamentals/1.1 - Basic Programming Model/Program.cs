@@ -15,6 +15,8 @@ namespace _1._1___Basic_Programming_Model
             Console.WriteLine(Basics.MaximumOfArrayValues(new int[] {1, 2, 3, 4}));
 
             Console.WriteLine(Basics.AverageOfArrayValues(new double[] {10, 20, 30}));
+
+            Console.WriteLine(Basics.CopyToAnotherArray(new string[] {"copy", "this", "please"}));
         }
     }
 }

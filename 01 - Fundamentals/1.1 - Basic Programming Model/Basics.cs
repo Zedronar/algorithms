@@ -47,7 +47,38 @@ namespace _1._1___Basic_Programming_Model
 
             return newArray;
         }
-                
+
         
+        public static double[] ReverseArray(double[] array)
+        {
+            int arrayLength = array.Length;
+
+            for (int i = 0; i < arrayLength/2; i++)
+            {
+                double temp = array[i];
+                array[i] = array[arrayLength - 1 - i];
+                array[arrayLength - i - 1] = temp;
+            }
+
+            return array;
+        }
+
+        public static int AbsoluteValueOfInt(int x)
+        {
+            if (x < 0) return -x;
+            else       return  x;
+        }
+
+        
+        public static bool IsPrime(int x)
+        {
+            if (x < 2) return false;
+            for (int i = 2; i < x; i++)
+            {
+                if (x % i == 0) return false;
+            }
+            return true;
+        }
+                
     }
 }
